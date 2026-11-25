@@ -128,61 +128,144 @@ export const PRODUCTS = [
     }
   },
   {
-    id: 'kostum-mayoret-royal',
-    title: 'Kostum Mayoret Royal Gold & Navy',
+    id: 'kostum-mayoret-merahputih',
+    title: 'Kostum Mayoret Merah-Putih & Shako Gold Bunga',
     category: 'kostum',
     categoryLabel: 'Kostum & Seragam',
-    tagPrimary: 'KOSTUM TERBARU',
-    tagSecondary: 'Lengkap Topi + Boots',
-    desc: 'Desain eksklusif berpayet mewah, termasuk topi shako bulu, selempang ornamen mutiara, sarung tangan, dan sepatu boots serasi.',
-    price: 250000,
+    tagPrimary: 'FOTO RIIL WORKSHOP',
+    tagSecondary: 'Full Set Topi + Boots',
+    desc: 'Atasan jas putih aksen merah berpayet emas militer, rok bertingkat lipit rapi, shako hat biru berornamen emas & bunga kuning, serta sepasang boots mayoret glitter.',
+    price: 275000,
     priceUnit: 'set',
-    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=800&q=80',
+    image: '/costumes/kostum-mayoret-merahputih.jpg',
     details: {
       specs: [
-        'Bahan: Kain velvet bridal premium dikombinasikan ornamen gold jacquard',
-        'Warna: Royal Deep Navy & Sparkling Gold Payet',
-        'Ukuran: Ready size S, M, L, XL (Bisa fitting langsung)',
-        'Aksesoris: Shako hat berbulu ostrich, epolet bahu rumbai emas',
-        'Kebersihan: Dry-cleaned, disetrika uap wangi siap kenakan'
+        'Bahan: Velvet bridal & drill kombi brokat emas militer mewah',
+        'Warna: Merah & Putih Nasional dengan aksen Royal Blue & Gold',
+        'Ukuran: Tersedia ukuran TK, SD, SMP, SMA (Bisa fitting langsung)',
+        'Aksesoris: Topi Shako bulu/bunga emas, sarung tangan satin putih',
+        'Sepatu: Boots Mayoret glitter merah atau biru-silver bulu',
+        'Kondisi: 100% higienis, dicuci antibakteri & disetrika uap wangi'
       ],
       packageIncludes: [
-        '1 Blazer Mayoret Royal Gold & Navy',
-        '1 Rok A-Line bertingkat dengan furing',
-        '1 Topi Shako Mayoret lengkap bulu mewah',
+        '1 Jas Atasan Mayoret Merah Putih Kancing Emas',
+        '1 Rok Bertingkat Lipit Kombinasi Merah Putih',
+        '1 Topi Shako Mewah Royal Blue & Bunga Emas',
+        '1 Pasang Sepatu Boots Mayoret (Glitter Merah / Biru-Silver)',
         '1 Pasang Sarung Tangan Putih Bersih',
-        '1 Pasang Sepatu Boots Putih/Navy (pilihan ukuran)',
-        '1 Tongkat Baton Mayoret (Opsional request)'
+        '1 Tongkat Baton Mayoret (Opsional Tambahan)'
       ],
-      suitableFor: 'Mayoret utama (Field Commander), lomba gitapati, defile karnaval kota.'
+      suitableFor: 'Mayoret utama, Gitapati, pimpinan barisan defile upacara kemerdekaan, karnaval HUT RI, dan lomba tingkat daerah/nasional.'
     }
   },
   {
-    id: 'seragam-pasukan-drummer',
-    title: 'Setelan Seragam Pasukan Drummer & Bell',
+    id: 'kostum-maskot-karakter',
+    title: 'Kostum Maskot Parade (Harimau Putih & Burung Elang)',
     category: 'kostum',
     categoryLabel: 'Kostum & Seragam',
-    tagPrimary: 'PAKET LENGKAP',
-    tagSecondary: 'Size S, M, L, XL, XXL',
-    desc: 'Kain drill premium adem, jahitan kuat berfuring, celana/rok lipit, selempang bordir benang emas, dan topi beremblem marching band.',
-    price: 85000,
+    tagPrimary: 'FOTO RIIL WORKSHOP',
+    tagSecondary: 'Karakter Ikonik',
+    desc: 'Kostum karakter maskot parade eksklusif: Kepala Harimau Putih loreng & jubah rumbai merah marun dengan jumpsuit oranye, atau Maskot Burung Elang Garuda dengan jubah sayap merah bertingkat & jumpsuit militer.',
+    price: 350000,
     priceUnit: 'set',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80',
+    image: '/costumes/kostum-maskot-karakter.jpg',
     details: {
       specs: [
-        'Bahan: American Drill High Quality, menyerap keringat dan tidak panas',
-        'Pilihan Bawahan: Celana panjang lurus bergaris samping atau Rok lipit rapi',
-        'Kelengkapan: Selempang dada bordir kencana + Topi Pet Seragam',
-        'Ketersediaan: Ready stock hingga 80+ set seragam seragam seragam kompak',
-        'Ukuran: Lengkap dari SD, SMP, SMA hingga umum'
+        'Pilihan Karakter: Harimau Putih (White Tiger) / Burung Elang Garuda',
+        'Jubah: Ruffled cape bertingkat beludru merah marun bervolume tinggi',
+        'Jumpsuit: Drill tebal nyaman (Oranye menyala / Hijau militer pilot)',
+        'Headpiece: Topeng kepala fiberglass dilapisi bulu halus sintetis berbusa empuk',
+        'Stik: Termasuk sepasang stick bass drum berumbai pom-pom'
+      ],
+      packageIncludes: [
+        '1 Unit Topeng Maskot Karakter (Harimau Putih / Burung Elang)',
+        '1 Jubah Rumbai Beludru Mewah Bertingkat',
+        '1 Jumpsuit Overall Parade Full Body',
+        '1 Pasang Sarung Tangan Kulit Parade',
+        '2 Stik Pemukul Berumbai Khusus Maskot'
+      ],
+      suitableFor: 'Pemain bass drum atraktif, maskot kejuaraan marching band, pembuka defile karnaval budaya, festival pawai kota.'
+    }
+  },
+  {
+    id: 'seragam-pasukan-drumband',
+    title: 'Setelan Seragam Pasukan Drumband Defile',
+    category: 'kostum',
+    categoryLabel: 'Kostum & Seragam',
+    tagPrimary: 'FOTO RIIL WORKSHOP',
+    tagSecondary: 'Ready 80+ Set',
+    desc: 'Seragam pasukan marching band ready-stock aneka varian: Hijau-Kuning Scotlite, Kuning-Marun Payet Perak Petir, dan Jas Kuning-Hitam Kancing Metal. Bahan American Drill adem berfuring rapi.',
+    price: 85000,
+    priceUnit: 'set',
+    image: '/costumes/seragam-pasukan-drumband.jpg',
+    details: {
+      specs: [
+        'Pilihan Model: Hijau Scotlite / Kuning-Marun Payet / Jas Kuning-Hitam',
+        'Bahan: American Drill High Quality, berfuring halus, tidak panas',
+        'Ukuran: Lengkap dari S, M, L, XL, XXL (Ready stok hingga 80+ set seragam sama)',
+        'Aksen: Garis reflektor scotlite, payet sequin silver berkilau panggung',
+        'Bawahan: Pilihan celana panjang garis samping atau rok lipit'
       ],
       packageIncludes: [
         '1 Jas / Baju Lengan Panjang Pasukan Parade',
-        '1 Celana Panjang / Rok Lipit Sesuai Request',
-        '1 Topi Pet Marching Band dengan Emblem Logam',
-        '1 Selempang Dada (Sash) Emas'
+        '1 Celana Panjang / Rok Lipit Senada',
+        '1 Selempang Dada (Sash) Parade',
+        'Pilihan Topi Pet / Shako Seragam'
       ],
-      suitableFor: 'Seluruh anggota pasukan drumband pemain snare, tenor, bass, bellyra, dan cymbal.'
+      suitableFor: 'Seluruh anggota pasukan pemain snare, tenor, bass drum, bellyra, dan simbal barisan sekolah.'
+    }
+  },
+  {
+    id: 'koleksi-topi-shako',
+    title: 'Koleksi Topi Shako & Pet Kehormatan Pasukan',
+    category: 'kostum',
+    categoryLabel: 'Kostum & Seragam',
+    tagPrimary: 'FOTO RIIL WORKSHOP',
+    tagSecondary: 'Multi-Warna Pilihan',
+    desc: 'Topi Shako militer marching band eksklusif dengan segitiga metalik cermin (Silver, Gold, Blue, Red, Black) dan Topi Pet beludru bordir chevron kencana.',
+    price: 45000,
+    priceUnit: 'pcs/hari',
+    image: '/costumes/topi-shako-pasukan.jpg',
+    details: {
+      specs: [
+        'Pilihan Warna: Royal Blue, Black Silver, Ruby Red, Black Gold, Pet Chevron',
+        'Bahan: Rangka fiber ringan kokoh, lapisan satin/beludru tahan cuaca',
+        'Emblem: Plat segitiga kromium cermin tahan karat & rumbai kepang emas',
+        'Kenyamanan: Lingkar kepala berbusa empuk dengan tali dagu elastis adjustable',
+        'Ketersediaan: Ready stock ratusan unit untuk 1 kontingen penuh'
+      ],
+      packageIncludes: [
+        '1 Unit Topi Shako / Pet Pilihan Model',
+        '1 Tali Dagu Pengikat (Adjustable Chin Strap)',
+        'Cover Pelindung Anti-Debu'
+      ],
+      suitableFor: 'Pasukan drumband, gitapati, mayoret cadangan, pengibaran bendera pataka.'
+    }
+  },
+  {
+    id: 'koleksi-sepatu-boots',
+    title: 'Sepatu Boots Mayoret & Pasukan Defile (All Size)',
+    category: 'kostum',
+    categoryLabel: 'Kostum & Seragam',
+    tagPrimary: 'FOTO RIIL WORKSHOP',
+    tagSecondary: 'Ukuran 30 - 44',
+    desc: 'Koleksi lengkap alas kaki marching band: Boots mayoret glitter bulu mewah, boots kulit sintetis putih/hitam berresleting samping, sepatu balet satin pita, dan pantofel parade sol karet anti slip.',
+    price: 50000,
+    priceUnit: 'pasang/hari',
+    image: '/costumes/sepatu-boots-mayoret.jpg',
+    details: {
+      specs: [
+        'Model Tersedia: Boots Tinggi Glitter Bulu, Boots Resleting, Sepatu Balet Satin, Pantofel Bertali',
+        'Ukuran: Size 30 - 44 (Lengkap untuk anak-anak TK, SD, SMP, SMA, hingga Guru/Pembina)',
+        'Bahan: Kulit sintetis elastis / glitter payet dengan bulu marabou lembut',
+        'Sol: Karet empuk anti-slip, nyaman dipakai jalan parade berkilo-kilo meter',
+        'Higienitas: Disemprot desinfektan sepatu wangi setiap kali kembali sewa'
+      ],
+      packageIncludes: [
+        '1 Pasang Sepatu / Boots Pilihan Model & Ukuran',
+        '1 Pasang Kaos Kaki Putih Bersih (Opsional)'
+      ],
+      suitableFor: 'Mayoret utama, penari color guard, pembawa bendera, dan seluruh barisan defile.'
     }
   },
   {
@@ -217,40 +300,58 @@ export const PRODUCTS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Drs. Prasetyo Wibowo, M.Pd',
-    role: 'Kepala Sekolah SMAN 1 Sleman',
-    avatarText: 'PW',
+    name: 'Ibu Sri Wahyuni, S.Pd.AUD',
+    role: 'Kepala Sekolah & Pembina TK ABA Karanganyar',
+    school: 'TK ABA Karanganyar',
+    avatarText: 'SW',
     avatarBg: 'bg-[#193963]',
     rating: 5,
-    quote: 'Pelayanan selalu teratur dan tepat waktu saat karnaval tahunan 17 Agustus. Dilengkapi dengan kuitansi dan SPK resmi, suara alat sangat berkelas dan seragam bersih wangi. Sangat merekomendasikan Harmoni Drumband untuk instansi sekolah!',
+    tag: 'Pawai & Karnaval Anak',
+    image: '/testimonials/testi-aba-karanganyar.jpg',
+    imageCaption: 'Kontingen Cilik TK ABA Karanganyar mengenakan kostum mayoret & seragam drumband Marching Pose',
+    quote: 'Kostum mayoret dan seragam pasukan sangat pas untuk anak-anak, warnanya cerah dan mencolok di jalanan pawai. Alat drumband ringan dan nyaman dipakai anak TK saat parade keliling. Terimakasih Ibu Nur Herwiyanti!',
+    verified: true,
+    eventDate: 'Agustus 2024'
   },
   {
     id: 2,
-    name: 'Nina Kustiasari, S.Pd',
-    role: 'Pembina Seni SMP Muhammadiyah 2 Yk',
-    avatarText: 'NK',
-    avatarBg: 'bg-[#a77c10]',
+    name: 'Drs. Prasetyo Wibowo, M.Pd',
+    role: 'Penanggung Jawab Kontingen Marching Band',
+    school: 'Kejuaraan Drumband Tingkat Pelajar DIY',
+    avatarText: 'PW',
+    avatarBg: 'bg-[#0f2744]',
     rating: 5,
-    quote: 'Kostum mayoret sangat mewah dan pas di badan siswa saat lomba festival marching band se-DIY. Pelayanan fitting langsung di workshop mempermudah penyesuaian ukuran tanpa ribet. Anak-anak sangat percaya diri tampil di panggung!',
+    tag: 'Kejuaraan Drumband Arena',
+    image: '/testimonials/testi-kejuaraan-arena.jpg',
+    imageCaption: 'Penampilan formasi divisi drumband & pit instrumen di arena kejuaraan indoor',
+    quote: 'Kualitas suara snare drum, bass, dan bell lyra sangat jernih dan harmonis di arena GOR kejuaraan. SPK resmi, kuitansi BOS, dan pengiriman armada tepat waktu tanpa kendala. Sangat terpercaya dan profesional!',
+    verified: true,
+    eventDate: 'September 2024'
   },
   {
     id: 3,
-    name: 'Arief Firmansyah, S.Sn',
-    role: 'Pelatih Marching Band Komunitas Pemuda Kota',
-    avatarText: 'AF',
-    avatarBg: 'bg-[#193963]',
+    name: 'Bunda Dian & Ananda Kirana',
+    role: 'Konsumen Langsung & Mayoret Cilik',
+    school: 'Pelanggan Setia Workshop Marching Pose Jogja',
+    avatarText: 'BD',
+    avatarBg: 'bg-[#996515]',
     rating: 5,
-    quote: 'Peralatan drumband 100% terawat, stem nada bersih, busa strap tebal sehingga pundak siswa tidak sakit saat parade 3 km. Pengiriman cepat dan tepat waktu, pelayanan responsif via WhatsApp kapanpun dibutuhkan.',
+    tag: 'Workshop Marching Pose (Sejak 2005)',
+    image: '/testimonials/testi-marchingpose-konsumen.jpg',
+    imageCaption: 'Dokumentasi konsumen di depan plang Marching Pose Yogyakarta membawa tongkat mayoret siap berlomba',
+    quote: 'Pelayanan di workshop ramah sekali! Fitting tongkat baton mayoret dan kostum dibantu langsung sampai pas dan nyaman. Anak saya jadi makin percaya diri saat tampil lomba. Sukses terus untuk Marching Pose Jogja!',
+    verified: true,
+    eventDate: 'Oktober 2024'
   },
 ];
 
 export const WORKSHOP_INFO = {
-  name: 'Harmoni Drumband & Kostum Yogyakarta',
+  name: 'Marching Pose - Drumband & Kostum Yogyakarta',
   address: 'Jl. Ringroad Selatan No. 88, Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta 55188',
   hours: 'Senin - Minggu: 08.00 - 20.00 WIB (Buka Setiap Hari)',
-  phone: '+62 812-3456-7890',
-  whatsappNumber: '6281234567890',
-  email: 'info@harmonidrumband.com',
+  phone: '+62 812-5131-6106',
+  whatsappNumber: '6281251316106',
+  email: 'info@marchingpose.com',
   mapsEmbedUrl: 'https://maps.google.com/?q=-7.839832,110.364741',
   lat: -7.839832,
   lng: 110.364741,

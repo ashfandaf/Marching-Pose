@@ -7,8 +7,10 @@ export default function RentalEstimatorModal({ isOpen, onClose }) {
     'snare-high-tension': 4,
     'bass-drum-tonal': 2,
     'marching-bellra': 4,
-    'kostum-mayoret-royal': 2,
-    'seragam-pasukan-drummer': 16,
+    'kostum-mayoret-merahputih': 2,
+    'seragam-pasukan-drumband': 16,
+    'koleksi-topi-shako': 16,
+    'koleksi-sepatu-boots': 18,
     'marching-hand-cymbal': 2,
   });
 
@@ -54,7 +56,7 @@ export default function RentalEstimatorModal({ isOpen, onClose }) {
       .join('\n');
 
     const msg = encodeURIComponent(
-      `Halo Harmoni Drumband Yogyakarta, saya ingin mengajukan estimasi sewa alat & seragam karnaval:\n\n` +
+      `Halo Marching Pose Yogyakarta, saya ingin mengajukan estimasi sewa alat & seragam karnaval:\n\n` +
         (schoolName ? `*Nama Sekolah/Instansi:* ${schoolName}\n` : '') +
         `*Durasi Sewa:* ${days} Hari\n` +
         `*Rincian Alat & Seragam:*\n${itemsList}\n\n` +

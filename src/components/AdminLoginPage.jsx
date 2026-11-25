@@ -79,9 +79,13 @@ export default function AdminLoginPage({ onNavigate, onAdminLoginSuccess }) {
       <main className="flex-1 flex items-center justify-center p-4 sm:p-6 z-10">
         <div className="w-full max-w-[440px] bg-white rounded-3xl border border-slate-200/80 shadow-2xl shadow-slate-200/60 p-8 sm:p-10 flex flex-col items-center text-center">
           
-          {/* Top Key Icon Box */}
-          <div className="w-14 h-14 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 mb-4 shadow-2xs">
-            <Key className="w-6 h-6 text-amber-700 rotate-45" />
+          {/* Top Logo Box */}
+          <div className="w-16 h-16 rounded-3xl bg-white border border-slate-200 overflow-hidden shadow-sm flex items-center justify-center p-1 mb-4 ring-4 ring-amber-400/20">
+            <img
+              src="/logo.jpg"
+              alt="Marching Pose Logo"
+              className="w-full h-full object-cover rounded-2xl"
+            />
           </div>
 
           {/* Pill Badge */}

@@ -20,7 +20,7 @@ const INITIAL_MESSAGES = [
   {
     id: 'welcome-1',
     sender: 'bot',
-    text: 'Halo! 👋 Saya **Harmoni AI Assistant**, asisten cerdas virtual untuk sewa alat marching band dan kostum karnaval di Yogyakarta.',
+    text: 'Halo! 👋 Saya **Marching Pose AI Assistant**, asisten cerdas virtual untuk sewa alat marching band dan kostum karnaval di Yogyakarta.',
     time: 'Baru saja',
   },
   {
@@ -75,7 +75,7 @@ export default function AiChatbot({ onOpenWhatsAppModal, onOpenCalculatorModal }
     // 1. Pricing / Tarif
     if (q.includes('tarif') || q.includes('harga') || q.includes('biaya') || q.includes('sewa berapa') || q.includes('price')) {
       return {
-        text: `Berikut daftar tarif sewa reguler di **Harmoni Drumband Yogyakarta**:\n\n` +
+        text: `Berikut daftar tarif sewa reguler di **Marching Pose Yogyakarta**:\n\n` +
           `• **Snare Drum High-Tension 14"**: Rp 120.000 / hari (termasuk carrier & stik)\n` +
           `• **Bass Drum Tonal (18"-24")**: Rp 150.000 / hari (termasuk mallet & harness)\n` +
           `• **Marching Bell Lyra 30 Nada**: Rp 110.000 / hari (termasuk strap & stik)\n` +
@@ -105,7 +105,7 @@ export default function AiChatbot({ onOpenWhatsAppModal, onOpenCalculatorModal }
     // 3. Location & Workshop / Fitting
     if (q.includes('lokasi') || q.includes('alamat') || q.includes('workshop') || q.includes('fitting') || q.includes('tempat') || q.includes('bantul') || q.includes('sewon') || q.includes('jogja')) {
       return {
-        text: `📍 **Workshop & Gudang Harmoni Drumband:**\n` +
+        text: `📍 **Workshop & Gudang Marching Pose:**\n` +
           `Jl. Ringroad Selatan No. 88, Panggungharjo, Sewon, Bantul, D.I. Yogyakarta 55188.\n` +
           `(Selatan Kampus ISI Yogyakarta / 10 menit dari Pojok Beteng Kulon Malioboro).\n\n` +
           `🕒 **Jam Buka:**\n` +
@@ -187,7 +187,7 @@ export default function AiChatbot({ onOpenWhatsAppModal, onOpenCalculatorModal }
     // 9. Booking Procedure / Syarat Sewa
     if (q.includes('cara') || q.includes('syarat') || q.includes('prosedur') || q.includes('booking') || q.includes('dp')) {
       return {
-        text: `📋 **Alur & Syarat Sewa di Harmoni Drumband:**\n\n` +
+        text: `📋 **Alur & Syarat Sewa di Marching Pose:**\n\n` +
           `1. **Konsultasi & Pilih Kebutuhan**: Sampaikan tanggal acara dan daftar alat/kostum yang diinginkan.\n` +
           `2. **Booking Tanggal**: Mengunci slot tanggal acara agar tidak diambil sekolah lain (terutama periode padat Agustus & akhir tahun).\n` +
           `3. **Fitting Ukuran**: Datang ke workshop di Sewon Bantul untuk fitting seragam dan tes suara alat.\n` +
@@ -242,7 +242,7 @@ export default function AiChatbot({ onOpenWhatsAppModal, onOpenCalculatorModal }
 
   const openWhatsApp = () => {
     const msg = encodeURIComponent(
-      'Halo Admin Harmoni Drumband, saya baru saja menggunakan Chatbot AI di website dan ingin konsultasi lebih lanjut mengenai sewa drumband/kostum.'
+      'Halo Admin Marching Pose, saya baru saja menggunakan Chatbot AI di website dan ingin konsultasi lebih lanjut mengenai sewa drumband/kostum.'
     );
     window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${msg}`, '_blank');
   };
@@ -291,14 +291,14 @@ export default function AiChatbot({ onOpenWhatsAppModal, onOpenCalculatorModal }
           {/* Header */}
           <div className="bg-gradient-to-r from-[#071527] to-[#122b4d] text-white p-4 flex items-center justify-between border-b border-slate-700/80 flex-shrink-0">
             <div className="flex items-center gap-3">
-              <div className="relative w-9 h-9 rounded-xl bg-amber-400/20 text-amber-300 border border-amber-400/40 flex items-center justify-center">
-                <Bot className="w-5 h-5 text-amber-400" />
+              <div className="relative w-9 h-9 rounded-xl bg-white overflow-hidden p-0.5 border border-amber-400/60 flex items-center justify-center flex-shrink-0">
+                <img src="/logo.jpg" alt="Marching Pose Bot" className="w-full h-full object-cover rounded-lg" />
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#071527]"></span>
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-sm font-extrabold text-white leading-tight">
-                    Harmoni AI Assistant
+                    Marching Pose AI Assistant
                   </h3>
                   <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 font-semibold border border-amber-400/30">
                     AI 24/7

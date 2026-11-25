@@ -21,7 +21,7 @@ export default function ProductDetailModal({ product, onClose }) {
   const handleBookViaWhatsApp = () => {
     const dateText = eventDate ? ` pada tanggal ${eventDate}` : '';
     const message = encodeURIComponent(
-      `Halo Harmoni Drumband & Kostum Yogyakarta, saya tertarik menyewa:\n\n*Item:* ${product.title}\n*Kategori:* ${product.categoryLabel}\n*Durasi:* ${rentalDays} ${product.priceUnit}${dateText}\n*Estimasi Tarif:* ${formatRupiah(estimatedTotal)}\n\nMohon info ketersediaan stok dan syarat administrasinya. Terima kasih!`
+      `Halo Marching Pose Yogyakarta, saya tertarik menyewa:\n\n*Item:* ${product.title}\n*Kategori:* ${product.categoryLabel}\n*Durasi:* ${rentalDays} ${product.priceUnit}${dateText}\n*Estimasi Tarif:* ${formatRupiah(estimatedTotal)}\n\nMohon info ketersediaan stok dan syarat administrasinya. Terima kasih!`
     );
     window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${message}`, '_blank');
   };

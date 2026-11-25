@@ -189,8 +189,12 @@ export default function AdminDashboard({ onNavigate, onLockPanel }) {
           </button>
 
           <div className="flex items-center gap-2.5 pl-2 border-l border-slate-200">
-            <div className="w-8 h-8 rounded-xl bg-[#0f2744] flex items-center justify-center text-amber-400 shadow-xs">
-              <Music className="w-4 h-4 text-amber-400" />
+            <div className="w-9 h-9 rounded-full overflow-hidden bg-white border border-slate-200 shadow-2xs flex items-center justify-center p-0.5 flex-shrink-0 ring-1 ring-amber-400">
+              <img
+                src="/logo.jpg"
+                alt="Marching Pose"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
             <div>
               <span className="block text-xs font-extrabold text-slate-900 leading-tight">
@@ -664,7 +668,7 @@ export default function AdminDashboard({ onNavigate, onLockPanel }) {
                         <div className="flex items-center justify-center gap-1.5">
                           <button
                             onClick={() => {
-                              const msg = encodeURIComponent(`Halo ${cust.pic} dari ${cust.schoolName}, kami dari Harmoni Drumband & Kostum (Ibu Nur Herwiyanti).`);
+                              const msg = encodeURIComponent(`Halo ${cust.pic} dari ${cust.schoolName}, kami dari Marching Pose (Ibu Nur Herwiyanti).`);
                               window.open(`https://wa.me/62${cust.phone.replace(/[^0-9]/g, '').slice(1)}?text=${msg}`, '_blank');
                             }}
                             title="Hubungi WhatsApp"

@@ -14,22 +14,17 @@ export default function WhyChooseUs() {
     <section id="keunggulan" className="relative z-20 w-full bg-white border-b border-slate-200/80 py-14 sm:py-16 px-6 sm:px-10 md:px-14 lg:px-18 xl:px-24 2xl:px-28 shadow-sm">
       <div className="w-full">
         
-        {/* Top Header Row - Full Width */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-10 border-b border-slate-100">
-          <div className="lg:col-span-6 space-y-2">
-            <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200/60">
-              Dedikasi Musik &amp; Seni
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Dedikasi Seni Musik Marching Sejak 2012
-            </h2>
-          </div>
-          
-          <div className="lg:col-span-6">
-            <p className="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed">
-              Dipercaya ratusan sekolah dan institusi di Daerah Istimewa Yogyakarta. Harmoni Drumband &amp; Kostum hadir memberikan solusi sewa alat drumband berkualitas tinggi, terawat dengan rapih, stem standar nasional, serta pilihan kostum karnaval berkarakter mewah dan elegan untuk momen terbaik tim Anda.
-            </p>
-          </div>
+        {/* Top Header Row */}
+        <div className="max-w-4xl space-y-3 pb-10 border-b border-slate-100">
+          <span className="inline-block text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200/60">
+            Dedikasi Musik &amp; Seni
+          </span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Dedikasi Seni Musik Marching Sejak 2005
+          </h2>
+          <p className="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed pt-1">
+            Dipercaya ratusan sekolah dan institusi di Daerah Istimewa Yogyakarta. Marching Pose hadir memberikan solusi sewa alat drumband berkualitas tinggi, terawat dengan rapih, stem standar nasional, serta pilihan kostum karnaval berkarakter mewah dan elegan untuk momen terbaik tim Anda.
+          </p>
         </div>
 
         {/* 4 Feature Cards Grid - Spans Across Screen */}

@@ -20,7 +20,7 @@ export default function WhatsAppConsultModal({ isOpen, onClose }) {
     if (inquiryType === 'spk') inquiryLabel = 'Prosedur Administrasi SPK & Kuitansi Dana BOS';
 
     const msg = encodeURIComponent(
-      `Halo Tim Harmoni Drumband & Kostum Yogyakarta!\n\n` +
+      `Halo Tim Marching Pose Yogyakarta!\n\n` +
       `*Perihal:* ${inquiryLabel}\n` +
       (schoolName ? `*Nama Sekolah / Instansi:* ${schoolName}\n` : '') +
       (eventDate ? `*Rencana Tanggal Pelaksanaan:* ${eventDate}\n` : '') +
@@ -47,7 +47,7 @@ export default function WhatsAppConsultModal({ isOpen, onClose }) {
                 Konsultasi WhatsApp Cepat 24/7
               </h2>
               <p className="text-xs text-slate-300">
-                Tim admin Harmoni Drumband siap merespons pertanyaan Anda
+                Tim admin Marching Pose siap merespons pertanyaan Anda
               </p>
             </div>
           </div>

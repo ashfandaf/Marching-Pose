@@ -8,7 +8,7 @@ export default function CtaBanner({ onOpenWhatsAppModal, onOpenCalculatorModal }
       onOpenWhatsAppModal();
     } else {
       const msg = encodeURIComponent(
-        'Halo Harmoni Drumband, kami ingin booking tanggal dan konsultasi pengadaan sewa drumband untuk sekolah/instansi kami.'
+        'Halo Marching Pose, kami ingin booking tanggal dan konsultasi pengadaan sewa drumband untuk sekolah/instansi kami.'
       );
       window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${msg}`, '_blank');
     }

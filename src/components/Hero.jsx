@@ -8,7 +8,7 @@ export default function Hero({ onOpenWhatsAppModal, onSelectProduct }) {
       onOpenWhatsAppModal();
     } else {
       const msg = encodeURIComponent(
-        'Halo Harmoni Drumband & Kostum Yogyakarta, saya ingin konsultasi sewa drumband dan seragam karnaval.'
+        'Halo Marching Pose Yogyakarta, saya ingin konsultasi sewa drumband dan seragam karnaval.'
       );
       window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${msg}`, '_blank');
     }
@@ -20,7 +20,7 @@ export default function Hero({ onOpenWhatsAppModal, onSelectProduct }) {
   };
 
   return (
-    <section id="profil" className="relative text-white pt-12 pb-24 lg:pt-16 lg:pb-28 overflow-hidden min-h-[640px] flex items-center">
+    <section id="profil" className="relative text-white pt-28 pb-24 sm:pt-32 lg:pt-36 lg:pb-28 overflow-hidden min-h-[680px] flex items-center">
       
       {/* Background Image from user with atmospheric navy overlays */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -56,7 +56,7 @@ export default function Hero({ onOpenWhatsAppModal, onSelectProduct }) {
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.15] drop-shadow-sm">
-              Harmoni Drumband &amp; Kostum Yogyakarta
+              Marching Pose Yogyakarta
             </h1>
 
             {/* Subtitle / Paragraph */}
@@ -109,7 +109,7 @@ export default function Hero({ onOpenWhatsAppModal, onSelectProduct }) {
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-slate-950">
                 <img
                   src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=800&q=80"
-                  alt="Harmoni Snare Drum & Royal Uniforms"
+                  alt="Marching Pose Snare Drum & Royal Uniforms"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 

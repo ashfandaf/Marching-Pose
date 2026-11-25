@@ -8,7 +8,7 @@ export default function Footer({ onOpenWhatsAppModal }) {
       onOpenWhatsAppModal();
     } else {
       const msg = encodeURIComponent(
-        'Halo Harmoni Drumband & Kostum, saya ingin tanya informasi sewa alat dan seragam.'
+        'Halo Marching Pose, saya ingin tanya informasi sewa alat dan seragam.'
       );
       window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${msg}`, '_blank');
     }
@@ -24,12 +24,16 @@ export default function Footer({ onOpenWhatsAppModal }) {
           {/* Brand Info */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#071527] flex items-center justify-center text-amber-400 shadow-sm">
-                <Music className="w-5 h-5 text-amber-400" />
+              <div className="w-12 h-12 rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm flex items-center justify-center p-1 flex-shrink-0">
+                <img
+                  src="/logo.jpg"
+                  alt="Marching Pose Logo"
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
               <div>
                 <span className="block text-base font-bold text-slate-900 leading-tight">
-                  Harmoni Drumband
+                  Marching Pose
                 </span>
                 <span className="block text-xs font-semibold text-amber-600 tracking-wider uppercase">
                   &amp; Kostum Yogyakarta
@@ -100,7 +104,7 @@ export default function Footer({ onOpenWhatsAppModal }) {
         {/* Bottom Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            &copy; 2024 Harmoni Drumband &amp; Kostum Yogyakarta. All Rights Reserved.
+            &copy; 2024 Marching Pose Yogyakarta (Ibu Nur Herwiyanti). All Rights Reserved.
           </p>
           <div className="flex items-center gap-4">
             <span className="hover:text-slate-600 cursor-pointer">Syarat &amp; Ketentuan Sewa</span>

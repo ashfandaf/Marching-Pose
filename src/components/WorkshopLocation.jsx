@@ -8,7 +8,7 @@ export default function WorkshopLocation({ onOpenWhatsAppModal }) {
       onOpenWhatsAppModal();
     } else {
       const msg = encodeURIComponent(
-        'Halo Harmoni Drumband & Kostum, saya ingin janjian jadwal fitting kostum & cek kondisi alat di workshop Bantul.'
+        'Halo Marching Pose, saya ingin janjian jadwal fitting kostum & cek kondisi alat di workshop Bantul.'
       );
       window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${msg}`, '_blank');
     }
@@ -137,7 +137,7 @@ export default function WorkshopLocation({ onOpenWhatsAppModal }) {
                 <div className="relative z-10 flex flex-col items-center animate-bounce duration-1000">
                   <div className="bg-white px-3.5 py-2 rounded-xl shadow-xl border border-slate-200 text-center max-w-[220px]">
                     <span className="block text-[11px] font-extrabold text-[#071527] leading-tight">
-                      Harmoni Drumband &amp; Kostum
+                      Marching Pose Yogyakarta
                     </span>
                     <span className="block text-[10px] text-amber-700 font-semibold mt-0.5">
                       Ringroad Selatan No. 88, Sewon

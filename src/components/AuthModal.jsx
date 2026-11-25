@@ -295,7 +295,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
               <div className="flex items-start gap-2 pt-1">
                 <input type="checkbox" required className="mt-0.5 rounded text-amber-600 focus:ring-amber-500" />
                 <span className="text-[11px] text-slate-600 leading-tight">
-                  Saya menyetujui Ketentuan Persewaan Alat &amp; Kebijakan Privasi Harmoni Drumband Yogyakarta.
+                  Saya menyetujui Ketentuan Persewaan Alat &amp; Kebijakan Privasi Marching Pose Yogyakarta.
                 </span>
               </div>
 

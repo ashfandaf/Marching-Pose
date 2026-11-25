@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NAV_LINKS, WORKSHOP_INFO } from '../data/mockData';
-import { Menu, X, MessageCircle, Music, User, LogIn, LogOut, ShieldCheck } from 'lucide-react';
+import { Menu, X, MessageCircle, Music, User, LogIn, LogOut, Sparkles } from 'lucide-react';
 
 export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUser, onLogout }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,7 +8,7 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUs
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 25);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -19,71 +19,76 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUs
       onOpenWhatsAppModal();
     } else {
       const msg = encodeURIComponent(
-        'Halo Harmoni Drumband & Kostum Yogyakarta, saya ingin bertanya mengenai ketersediaan sewa alat drumband dan kostum karnaval.'
+        'Halo Marching Pose Yogyakarta, saya ingin bertanya mengenai ketersediaan sewa alat drumband dan kostum karnaval.'
       );
       window.open(`https://wa.me/${WORKSHOP_INFO.whatsappNumber}?text=${msg}`, '_blank');
     }
   };
 
   return (
-    <header
-      className={`sticky top-0 z-40 w-full transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-md py-3'
-          : 'bg-white py-4 border-b border-slate-100'
-      }`}
-    >
-      <div className="w-full px-6 sm:px-10 md:px-14 lg:px-18 xl:px-24 2xl:px-28">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-navy-900 to-navy-700 flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition-transform">
-              <Music className="w-5 h-5 text-amber-400" />
+    <header className="fixed top-3 sm:top-5 inset-x-0 z-50 flex justify-center px-3 sm:px-6 pointer-events-none transition-all duration-300">
+      <div className="w-full max-w-6xl xl:max-w-7xl flex flex-col pointer-events-auto">
+        
+        {/* Floating Liquid Glass Pill Capsule (Oval Panjang) */}
+        <div
+          className={`w-full rounded-full transition-all duration-300 flex items-center justify-between px-3 sm:px-6 py-2 sm:py-2.5 ${
+            isScrolled
+              ? 'bg-white/85 backdrop-blur-2xl shadow-[0_12px_40px_rgba(7,21,39,0.18)] border border-white/80 ring-1 ring-slate-900/5'
+              : 'bg-white/75 backdrop-blur-xl shadow-[0_8px_32px_rgba(7,21,39,0.12),inset_0_1px_2px_rgba(255,255,255,0.9)] border border-white/70'
+          }`}
+        >
+          {/* Left: Brand Logo & Title */}
+          <a href="#" className="flex items-center gap-2.5 sm:gap-3 group pl-1">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform flex-shrink-0 ring-2 ring-amber-400/80 overflow-hidden p-0.5">
+              <img
+                src="/logo.jpg"
+                alt="Marching Pose Logo"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
-            <div>
-              <span className="block text-base sm:text-lg font-bold text-slate-900 leading-tight tracking-tight">
-                Harmoni Drumband
+            <div className="hidden xs:block sm:block text-left">
+              <span className="block text-xs sm:text-sm font-extrabold text-slate-900 leading-tight tracking-tight">
+                Marching Pose
               </span>
-              <span className="block text-xs font-semibold text-amber-600 tracking-wider uppercase">
+              <span className="block text-[9px] sm:text-[10px] font-bold text-amber-600 tracking-wider uppercase">
                 &amp; Kostum Yogyakarta
               </span>
             </div>
           </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
+          {/* Center: Desktop Navigation Pills */}
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 bg-slate-900/[0.04] p-1 rounded-full border border-white/50 backdrop-blur-sm">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-navy-900 hover:font-semibold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500 hover:after:w-full after:transition-all"
+                className="px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-700 hover:text-navy-950 hover:bg-white hover:shadow-2xs transition-all"
               >
                 {link.name}
               </a>
             ))}
           </nav>
 
-          {/* Right Action Group (Login / Register + WhatsApp) */}
-          <div className="hidden md:flex items-center gap-3">
-            
-            {/* Login / Register Button or User Profile */}
+          {/* Right Action Group (Login / User Profile + WhatsApp CTA) */}
+          <div className="hidden md:flex items-center gap-2 sm:gap-2.5">
+            {/* User Profile or Login/Register Button */}
             {currentUser ? (
-              <div className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200/80 p-1.5 pr-3 rounded-xl border border-slate-200 transition-colors">
-                <div className="w-7 h-7 rounded-lg bg-[#071527] text-amber-400 font-bold text-xs flex items-center justify-center">
+              <div className="flex items-center gap-2 bg-white/90 hover:bg-white p-1 pr-3 rounded-full border border-slate-200/80 shadow-2xs transition-all">
+                <div className="w-7 h-7 rounded-full bg-[#071527] text-amber-400 font-bold text-xs flex items-center justify-center flex-shrink-0">
                   {currentUser.name ? currentUser.name.charAt(0).toUpperCase() : 'U'}
                 </div>
                 <div className="text-left text-xs">
-                  <span className="block font-bold text-slate-800 leading-tight max-w-[120px] truncate">
+                  <span className="block font-bold text-slate-800 leading-tight max-w-[110px] truncate">
                     {currentUser.name}
                   </span>
-                  <span className="block text-[10px] text-slate-500 leading-none">
-                    {currentUser.school || 'Terverifikasi'}
+                  <span className="block text-[9px] text-slate-500 leading-none">
+                    {currentUser.school || 'Terdaftar'}
                   </span>
                 </div>
                 <button
                   onClick={onLogout}
                   title="Keluar (Logout)"
-                  className="ml-1 p-1 text-slate-400 hover:text-red-600 rounded transition-colors"
+                  className="ml-1 p-1 text-slate-400 hover:text-red-600 rounded-full transition-colors"
                 >
                   <LogOut className="w-3.5 h-3.5" />
                 </button>
@@ -91,54 +96,52 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUs
             ) : (
               <button
                 onClick={onOpenAuthModal}
-                className="inline-flex items-center gap-2 bg-slate-50 hover:bg-slate-100 text-slate-700 hover:text-navy-900 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-lg border border-slate-300/80 hover:border-slate-400 shadow-2xs transition-all duration-200"
+                className="inline-flex items-center gap-1.5 bg-white/80 hover:bg-white text-slate-700 hover:text-navy-900 font-bold text-xs px-3.5 py-2 rounded-full border border-slate-200/80 hover:border-slate-300 shadow-2xs hover:shadow-xs transition-all"
               >
-                <LogIn className="w-4 h-4 text-slate-500" />
+                <LogIn className="w-3.5 h-3.5 text-slate-500" />
                 <span>Login / Register</span>
               </button>
             )}
 
-            {/* WhatsApp CTA Button */}
+            {/* WhatsApp CTA Button (Oval Pill) */}
             <button
               onClick={openWhatsAppDirect}
-              className="inline-flex items-center gap-2 bg-[#996515] hover:bg-[#805310] active:bg-[#6b440b] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#996515] to-[#b8860b] hover:from-[#805310] hover:to-[#996515] active:from-[#6b440b] active:to-[#805310] text-white text-xs font-bold uppercase tracking-wider px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 ring-1 ring-amber-400/30"
             >
-              <MessageCircle className="w-4 h-4 fill-white" />
+              <MessageCircle className="w-3.5 h-3.5 fill-white" />
               <span>Tanya ke WhatsApp Kami</span>
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2">
+          {/* Mobile Actions: Login icon + Hamburger Menu */}
+          <div className="flex md:hidden items-center gap-1.5">
             {!currentUser && (
               <button
                 onClick={onOpenAuthModal}
-                className="p-2 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold flex items-center gap-1.5"
+                className="px-3 py-1.5 rounded-full bg-white text-slate-700 text-xs font-bold flex items-center gap-1 border border-slate-200 shadow-2xs"
               >
-                <LogIn className="w-3.5 h-3.5" />
+                <LogIn className="w-3 h-3 text-slate-500" />
                 <span>Login</span>
               </button>
             )}
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+              className="w-8 h-8 rounded-full bg-white/90 text-slate-700 flex items-center justify-center hover:bg-white transition-colors border border-slate-200 shadow-2xs"
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Drawer */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-slate-200 px-6 pt-3 pb-6 animate-fadeIn shadow-lg">
-          <div className="flex flex-col gap-3">
+        {/* Mobile Dropdown (Matching Liquid Glass Card) */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden mt-2 bg-white/90 backdrop-blur-2xl rounded-3xl p-5 border border-white/80 shadow-2xl space-y-3 animate-fadeIn">
             {currentUser && (
-              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200">
+              <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-200">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-[#071527] text-amber-400 font-bold text-xs flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-[#071527] text-amber-400 font-bold text-xs flex items-center justify-center">
                     {currentUser.name ? currentUser.name.charAt(0).toUpperCase() : 'U'}
                   </div>
                   <div>
@@ -155,16 +158,18 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUs
               </div>
             )}
 
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-navy-900"
-              >
-                {link.name}
-              </a>
-            ))}
+            <div className="flex flex-col gap-1">
+              {NAV_LINKS.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-2xl text-xs font-bold text-slate-700 hover:bg-slate-100 hover:text-navy-950 transition-colors"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
 
             <div className="pt-2 border-t border-slate-100 flex flex-col gap-2">
               {!currentUser && (
@@ -173,9 +178,9 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUs
                     setMobileMenuOpen(false);
                     onOpenAuthModal();
                   }}
-                  className="w-full flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-3 rounded-lg border border-slate-200"
+                  className="w-full flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold py-2.5 rounded-full border border-slate-200"
                 >
-                  <LogIn className="w-4 h-4" />
+                  <LogIn className="w-3.5 h-3.5" />
                   <span>Login / Register Akun Sekolah</span>
                 </button>
               )}
@@ -185,15 +190,16 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal, currentUs
                   setMobileMenuOpen(false);
                   openWhatsAppDirect();
                 }}
-                className="w-full flex items-center justify-center gap-2 bg-[#996515] hover:bg-[#805310] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-lg shadow"
+                className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-[#996515] to-[#b8860b] hover:from-[#805310] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-full shadow-md"
               >
                 <MessageCircle className="w-4 h-4 fill-white" />
                 <span>Tanya ke WhatsApp Kami</span>
               </button>
             </div>
           </div>
-        </div>
-      )}
+        )}
+
+      </div>
     </header>
   );
 }

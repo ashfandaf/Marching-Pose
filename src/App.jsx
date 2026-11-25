@@ -26,7 +26,7 @@ export default function App() {
   // Check saved login session and URL hash on load
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('harmoni_user');
+      const saved = localStorage.getItem('marchingpose_user') || localStorage.getItem('harmoni_user');
       if (saved) {
         setCurrentUser(JSON.parse(saved));
       }
@@ -63,7 +63,7 @@ export default function App() {
   const handleLoginSuccess = (user) => {
     setCurrentUser(user);
     try {
-      localStorage.setItem('harmoni_user', JSON.stringify(user));
+      localStorage.setItem('marchingpose_user', JSON.stringify(user));
     } catch (e) {
       // ignore
     }
@@ -73,6 +73,7 @@ export default function App() {
   const handleLogout = () => {
     setCurrentUser(null);
     try {
+      localStorage.removeItem('marchingpose_user');
       localStorage.removeItem('harmoni_user');
     } catch (e) {
       // ignore

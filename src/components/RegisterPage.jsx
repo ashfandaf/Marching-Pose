@@ -71,12 +71,16 @@ export default function RegisterPage({ onNavigate, onLoginSuccess }) {
             onClick={() => onNavigate('landing')}
             className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="w-10 h-10 rounded-xl bg-[#0f2744] flex items-center justify-center text-amber-400 shadow-sm group-hover:scale-105 transition-transform">
-              <Music className="w-5 h-5 text-amber-400" />
+            <div className="w-11 h-11 rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm group-hover:scale-105 transition-transform p-0.5 flex-shrink-0 flex items-center justify-center">
+              <img
+                src="/logo.jpg"
+                alt="Marching Pose Logo"
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
             <div>
               <span className="block text-lg font-bold text-slate-900 leading-tight">
-                Harmoni
+                Marching Pose
               </span>
               <span className="block text-[10px] font-semibold text-slate-500 uppercase tracking-widest">
                 DRUMBAND &amp; KOSTUM • IBU NUR HERWIYANTI
@@ -325,7 +329,7 @@ export default function RegisterPage({ onNavigate, onLoginSuccess }) {
                     className="w-4 h-4 mt-0.5 rounded text-[#0f2744] focus:ring-navy-800"
                   />
                   <span className="leading-relaxed">
-                    Saya menyetujui Ketentuan Reservasi &amp; Jaminan Kerahasiaan Dokumen Administrasi pengadaan unit alat drumband dan sewa kostum Harmoni.
+                    Saya menyetujui Ketentuan Reservasi &amp; Jaminan Kerahasiaan Dokumen Administrasi pengadaan unit alat drumband dan sewa kostum Marching Pose.
                   </span>
                 </label>
               </div>
@@ -369,7 +373,7 @@ export default function RegisterPage({ onNavigate, onLoginSuccess }) {
               
               <div>
                 <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200/60 mb-2">
-                  ⭐ STANDAR LAYANAN HARMONI
+                  ⭐ STANDAR LAYANAN MARCHING POSE
                 </span>
                 <h3 className="text-base font-bold text-slate-900 leading-snug">
                   Keleluasaan Pengadaan Terstandarisasi Lembaga
@@ -486,7 +490,7 @@ export default function RegisterPage({ onNavigate, onLoginSuccess }) {
           </span>
         </div>
         <p className="text-[11px] text-slate-400">
-          &copy; 2024 Harmoni Drumband &amp; Kostum (Ibu Nur Herwiyanti). Pengadaan Resmi Satuan Pendidikan &amp; Institusi.
+          &copy; 2024 Marching Pose (Ibu Nur Herwiyanti). Pengadaan Resmi Satuan Pendidikan &amp; Institusi.
         </p>
       </footer>
 

@@ -24,3 +24,85 @@
   background: #94a3b8;
 }
 
+/* Background Seamless Drift to Right */
+@keyframes moveRightSeamless {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+/* 5 Gentle & Calm Speeds for Background Marching Drift (Slow, Smooth & Eye-Friendly) */
+.animate-drift-right-1 {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 75s linear infinite;
+  will-change: transform;
+}
+
+.animate-drift-right-2 {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 90s linear infinite;
+  will-change: transform;
+}
+
+.animate-drift-right-3 {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 80s linear infinite;
+  will-change: transform;
+}
+
+.animate-drift-right-4 {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 95s linear infinite;
+  will-change: transform;
+}
+
+.animate-drift-right-5 {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 85s linear infinite;
+  will-change: transform;
+}
+
+/* Backward compatibility classes */
+.animate-drift-right-fast {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 20s linear infinite;
+  will-change: transform;
+}
+
+.animate-drift-right-medium {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 24s linear infinite;
+  will-change: transform;
+}
+
+.animate-drift-right-slow {
+  display: flex;
+  width: max-content;
+  animation: moveRightSeamless 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+
